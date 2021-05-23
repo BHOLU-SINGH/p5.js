@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p5.js JavaScript Effect</title>
+	<meta name="keywords" content="javascript, javascript tutorial, javascript free project download, javascript freeprojects1, javascript code, javascript projects, javascript basics, javascript objects, javascript functions, javascript in html, javascript console, javascript array, javascript tutorial for beginners, javascript project, javascript projects for beginners, free javascript projects with source code, free javascript projects for beginners, free javascript practice projects, html javascript projects free download, 100 javascript projects free download, javascript sample projects free download, html css javascript projects free download, free projects with source code and documentation, free projects download, free projects for all, free projects with source code, free projects download sites, free projects for cse, free projects for computer science students, free project 1, free projects1, free projects for computer science, free projects on github, free source code for website, free source code projects, free source code download, free source code for website design in html, free projects, free projects 1 blog, freeprojectsforall, free project download, free project, free project file, free project download with source code, free projects 1 blog, bholu, singh, Bholu Singh, bholu singh github,  who is bholu singh, bholu singh bharatpur, Bholu Singh Bikaner, bholu blogger, bholu sigh blog, freeprojects1, freeproject1, FreeProjects1.blogspot.com">
+	<meta name="description" content="It is a free javascript project with awesome effect. In this project, whenever we mouse our mouse than a circle draw on our computer screen.">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+	<script type="text/javascript" src="p5.js"></script>
+	<script type="text/javascript">
+		function setup(){
+			createCanvas(windowWidth, windowHeight);
+		}
+		function draw(){
+			const col = {};
+			const {r,g,b} = col;
+			col.r = random(0,255);
+			col.g = random(0,255);
+			col.b = random(0,255);
+			fill(col.r,col.g,col.b);
+			// shape(
+			// x-axis,y-axis,width,height)
+			// ellipse(300, 300, 200, 200);
+			ellipse(mouseX, mouseY, 200, 200);
+		}
+	</script>
+</body>
+</html>
